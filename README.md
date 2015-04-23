@@ -1,3 +1,31 @@
+## robot_model (jade) - 1.11.7-0
+
+The packages in the `robot_model` repository were released into the `jade` distro by running `/usr/local/bin/bloom-release -r jade -t jade robot_model` on `Thu, 23 Apr 2015 01:30:07 -0000`
+
+These packages were released:
+- `collada_parser`
+- `collada_urdf`
+- `joint_state_publisher`
+- `kdl_parser`
+- `robot_model`
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `robot_model`:
+- upstream repository: https://github.com/ros/robot_model.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.11.7-0`
+
+Versions of tools used:
+- bloom version: `0.5.19`
+- catkin_pkg version: `0.2.8`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## robot_model (indigo) - 1.11.7-0
 
 The packages in the `robot_model` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release -r indigo -t indigo robot_model` on `Thu, 23 Apr 2015 01:18:30 -0000`
