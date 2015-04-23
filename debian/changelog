@@ -1,0 +1,69 @@
+ros-indigo-robot-model (1.11.7-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Wed, 22 Apr 2015 07:00:00 -0000
+
+ros-indigo-robot-model (1.11.6-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Sun, 30 Nov 2014 08:00:00 -0000
+
+ros-indigo-robot-model (1.11.5-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Thu, 24 Jul 2014 07:00:00 -0000
+
+ros-indigo-robot-model (1.11.4-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Mon, 07 Jul 2014 07:00:00 -0000
+
+ros-indigo-robot-model (1.11.3-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Tue, 24 Jun 2014 07:00:00 -0000
+
+ros-indigo-robot-model (1.11.2-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Sat, 22 Mar 2014 07:00:00 -0000
+
+ros-indigo-robot-model (1.11.1-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Thu, 20 Mar 2014 07:00:00 -0000
+
+ros-indigo-robot-model (1.11.0-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Fri, 21 Feb 2014 08:00:00 -0000
+
+ros-indigo-robot-model (1.10.18-0trusty) trusty; urgency=high
+
+  * add DEPENDS for kdl_parser
+  * Contributors: Ioan Sucan
+
+ -- Ioan Sucan <isucan@gmail.com>  Wed, 04 Dec 2013 08:00:00 -0000
+
+ros-indigo-robot-model (1.10.16-0trusty) trusty; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Mon, 18 Nov 2013 08:00:00 -0000
+
+ros-indigo-robot-model (1.10.15-0trusty) trusty; urgency=high
+
+  * remove unneeded deps (fix #32 <https://github.com/ros/robot_model/issues/32>)
+  * Created new diagram for documenting URDF
+
+ -- Ioan Sucan <isucan@gmail.com>  Sat, 17 Aug 2013 07:00:00 -0000
+
+
