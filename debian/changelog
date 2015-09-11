@@ -1,0 +1,81 @@
+ros-jade-joint-state-publisher (1.11.8-0trusty) trusty; urgency=high
+
+
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Fri, 11 Sep 2015 04:00:00 -0000
+
+ros-jade-joint-state-publisher (1.11.7-0trusty) trusty; urgency=high
+
+  * Added a randomize button for the joints.
+  * Contributors: Aaron Blasdel
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Wed, 22 Apr 2015 04:00:00 -0000
+
+ros-jade-joint-state-publisher (1.11.6-0trusty) trusty; urgency=high
+
+  * Added floating joints to joint types ignored by publisher
+  * warn when joints have no limits
+  * add queue_size for publisher
+  * Contributors: Jihoon Lee, Michael Ferguson, Shaun Edwards
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Sun, 30 Nov 2014 05:00:00 -0000
+
+ros-jade-joint-state-publisher (1.11.5-0trusty) trusty; urgency=high
+
+
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Thu, 24 Jul 2014 04:00:00 -0000
+
+ros-jade-joint-state-publisher (1.11.4-0trusty) trusty; urgency=high
+
+  * Update package.xml
+    Updating author and maintainer email for consistency
+  * Contributors: David Lu!!
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Mon, 07 Jul 2014 04:00:00 -0000
+
+ros-jade-joint-state-publisher (1.11.3-0trusty) trusty; urgency=high
+
+
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Tue, 24 Jun 2014 04:00:00 -0000
+
+ros-jade-joint-state-publisher (1.11.2-0trusty) trusty; urgency=high
+
+
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Sat, 22 Mar 2014 04:00:00 -0000
+
+ros-jade-joint-state-publisher (1.11.1-0trusty) trusty; urgency=high
+
+
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Thu, 20 Mar 2014 04:00:00 -0000
+
+ros-jade-joint-state-publisher (1.11.0-0trusty) trusty; urgency=high
+
+  * Use #!/usr/bin/env python for systems with multiple Python versions.
+  * Contributors: Benjamin Chretien
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Fri, 21 Feb 2014 05:00:00 -0000
+
+ros-jade-joint-state-publisher (1.10.18-0trusty) trusty; urgency=high
+
+
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Wed, 04 Dec 2013 05:00:00 -0000
+
+ros-jade-joint-state-publisher (1.10.16-0trusty) trusty; urgency=high
+
+
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Mon, 18 Nov 2013 05:00:00 -0000
+
+ros-jade-joint-state-publisher (1.10.15-0trusty) trusty; urgency=high
+
+  * joint_state_publisher: do not install script to global bin
+    Also clean up no longer required setup.py
+
+ -- David V. Lu!! <davidvlu@gmail.com>  Sat, 17 Aug 2013 04:00:00 -0000
+
+
