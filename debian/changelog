@@ -1,0 +1,84 @@
+ros-jade-urdf (1.11.8-0vivid) vivid; urgency=high
+
+  * Removed pcre hack for newer released collada-dom.
+  * Fixed link order of libpcrecpp.
+  * Contributors: Kei Okada
+
+ -- Ioan Sucan <isucan@gmail.com>  Fri, 11 Sep 2015 04:00:00 -0000
+
+ros-jade-urdf (1.11.7-0vivid) vivid; urgency=high
+
+  * Removed the exporting of Boost and pcre as they are not used in the headers, and added TinyXML because it is.
+  * Fixed a bug with pcrecpp on Ubuntu > 13.04.
+  * Contributors: Kei Okada, William Woodall
+
+ -- Ioan Sucan <isucan@gmail.com>  Wed, 22 Apr 2015 04:00:00 -0000
+
+ros-jade-urdf (1.11.6-0vivid) vivid; urgency=high
+
+  * Add install for static libs needed for Android cross-compilation
+  * Contributors: Gary Servin
+
+ -- Ioan Sucan <isucan@gmail.com>  Sun, 30 Nov 2014 05:00:00 -0000
+
+ros-jade-urdf (1.11.5-0vivid) vivid; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Thu, 24 Jul 2014 04:00:00 -0000
+
+ros-jade-urdf (1.11.4-0vivid) vivid; urgency=high
+
+  * moving to new dependency for urdfdom and urdfdom_headers. https://github.com/ros/rosdistro/issues/4633
+  * Contributors: Tully Foote
+
+ -- Ioan Sucan <isucan@gmail.com>  Mon, 07 Jul 2014 04:00:00 -0000
+
+ros-jade-urdf (1.11.3-0vivid) vivid; urgency=high
+
+  * fix urdfdom_headers find_package re ros/rosdistro#4633 <https://github.com/ros/rosdistro/issues/4633>
+  * Contributors: Tully Foote
+
+ -- Ioan Sucan <isucan@gmail.com>  Tue, 24 Jun 2014 04:00:00 -0000
+
+ros-jade-urdf (1.11.2-0vivid) vivid; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Sat, 22 Mar 2014 04:00:00 -0000
+
+ros-jade-urdf (1.11.1-0vivid) vivid; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Thu, 20 Mar 2014 04:00:00 -0000
+
+ros-jade-urdf (1.11.0-0vivid) vivid; urgency=high
+
+  * fix urdf files for test
+  * fix test at urdf
+  * Contributors: YoheiKakiuchi
+
+ -- Ioan Sucan <isucan@gmail.com>  Fri, 21 Feb 2014 05:00:00 -0000
+
+ros-jade-urdf (1.10.18-0vivid) vivid; urgency=high
+
+  * add DEPENDS for kdl_parser
+  * Contributors: Ioan Sucan
+
+ -- Ioan Sucan <isucan@gmail.com>  Wed, 04 Dec 2013 05:00:00 -0000
+
+ros-jade-urdf (1.10.16-0vivid) vivid; urgency=high
+
+  * check for CATKIN_ENABLE_TESTING
+  * fix for using collada_parser_plugin
+
+ -- Ioan Sucan <isucan@gmail.com>  Mon, 18 Nov 2013 05:00:00 -0000
+
+ros-jade-urdf (1.10.15-0vivid) vivid; urgency=high
+
+  * fix #30 <https://github.com/ros/robot_model/issues/30>
+
+ -- Ioan Sucan <isucan@gmail.com>  Sat, 17 Aug 2013 04:00:00 -0000
+
+
