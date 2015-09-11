@@ -2,6 +2,11 @@
 Changelog for package collada_urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.8 (2015-09-11)
+-------------------
+* Removed pcre hack for newer released collada-dom.
+* Contributors: Kei Okada
+
 1.11.7 (2015-04-22)
 -------------------
 * Fixed `#89 <https://github.com/ros/robot_model/issues/89>`_
