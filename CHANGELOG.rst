@@ -2,6 +2,9 @@
 Changelog for package joint_state_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.8 (2015-09-11)
+-------------------
+
 1.11.7 (2015-04-22)
 -------------------
 * Added a randomize button for the joints.
