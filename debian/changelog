@@ -1,0 +1,76 @@
+ros-indigo-urdf-parser-plugin (1.11.8-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Fri, 11 Sep 2015 04:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.11.7-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Wed, 22 Apr 2015 04:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.11.6-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Sun, 30 Nov 2014 05:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.11.5-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Thu, 24 Jul 2014 04:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.11.4-0saucy) saucy; urgency=high
+
+  * moving to new dependency for urdfdom and urdfdom_headers. https://github.com/ros/rosdistro/issues/4633
+  * Contributors: Tully Foote
+
+ -- Ioan Sucan <isucan@gmail.com>  Mon, 07 Jul 2014 04:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.11.3-0saucy) saucy; urgency=high
+
+  * update usage of urdfdom_headers for indigo/trusty
+  * Contributors: William Woodall
+
+ -- Ioan Sucan <isucan@gmail.com>  Tue, 24 Jun 2014 04:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.11.2-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Sat, 22 Mar 2014 04:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.11.1-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Thu, 20 Mar 2014 04:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.11.0-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Fri, 21 Feb 2014 05:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.10.18-0saucy) saucy; urgency=high
+
+  * add DEPENDS for kdl_parser
+  * Contributors: Ioan Sucan
+
+ -- Ioan Sucan <isucan@gmail.com>  Wed, 04 Dec 2013 05:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.10.16-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Mon, 18 Nov 2013 05:00:00 -0000
+
+ros-indigo-urdf-parser-plugin (1.10.15-0saucy) saucy; urgency=high
+
+
+
+ -- Ioan Sucan <isucan@gmail.com>  Sat, 17 Aug 2013 04:00:00 -0000
+
+
