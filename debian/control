@@ -1,0 +1,12 @@
+Source: ros-jade-robot-model
+Section: misc
+Priority: extra
+Maintainer: Ioan Sucan <isucan@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://ros.org/wiki/robot_model
+Standards-Version: 3.9.2
+
+Package: ros-jade-robot-model
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-collada-parser, ros-jade-collada-urdf, ros-jade-joint-state-publisher, ros-jade-kdl-parser, ros-jade-resource-retriever, ros-jade-urdf, ros-jade-urdf-parser-plugin
+Description: robot_model contains packages for modeling various aspects of robot information, specified in the Xml Robot Description Format (URDF). The core package of this stack is urdf, which parses URDF files, and constructs an object model (C++) of the robot.
