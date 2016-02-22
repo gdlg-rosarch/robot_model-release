@@ -1,6 +1,6 @@
 <package>
   <name>collada_urdf</name>
-  <version>1.11.8</version>
+  <version>1.11.9</version>
   <description>
     This package contains a tool to convert Unified Robot Description Format (URDF) documents into COLLAborative Design Activity (COLLADA) documents.
 
@@ -11,6 +11,7 @@
   <author>Tim Field</author>
   <author>Rosen Diankov</author>
   <maintainer email="isucan@gmail.com">Ioan Sucan</maintainer>
+  <maintainer email="jacquelinekay1@gmail.com">Jackie Kay</maintainer>
 
   <license>BSD</license>
 
