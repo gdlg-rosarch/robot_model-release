@@ -2,6 +2,12 @@
 Changelog for package robot_model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.9 (2016-02-22)
+-------------------
+* Add Jackie as a maintainer
+* add liburdfdom-tools as a run dependency of robot_model
+* Contributors: Jackie Kay
+
 1.11.8 (2015-09-11)
 -------------------
 
