@@ -2,6 +2,11 @@
 Changelog for package collada_urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.9 (2016-02-22)
+-------------------
+* Add Jackie as a maintainer
+* Contributors: Jackie Kay
+
 1.11.8 (2015-09-11)
 -------------------
 * Removed pcre hack for newer released collada-dom.
