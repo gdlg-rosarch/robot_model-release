@@ -1,6 +1,6 @@
 <package>
   <name>robot_model</name>
-  <version>1.11.8</version>
+  <version>1.11.9</version>
   <description>
     <tt>robot_model</tt> contains packages for modeling various
     aspects of robot information, specified in the Xml Robot
@@ -11,6 +11,7 @@
 
   <author email="isucan@gmail.com">Ioan Sucan</author>
   <maintainer email="isucan@gmail.com">Ioan Sucan</maintainer>
+  <maintainer email="jacquelinekay1@gmail.com">Jackie Kay</maintainer>
 
   <license>BSD</license>
 
@@ -20,6 +21,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <run_depend>liburdfdom-tools</run_depend>
   <run_depend>collada_parser</run_depend>
   <run_depend>collada_urdf</run_depend>
   <run_depend>kdl_parser</run_depend>
