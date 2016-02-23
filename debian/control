@@ -1,0 +1,12 @@
+Source: ros-jade-urdf-parser-plugin
+Section: misc
+Priority: extra
+Maintainer: Ioan Sucan <isucan@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), liburdfdom-headers-dev, ros-jade-catkin
+Homepage: http://ros.org/wiki/urdf
+Standards-Version: 3.9.2
+
+Package: ros-jade-urdf-parser-plugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, liburdfdom-headers-dev
+Description: This package contains a C++ base class for URDF parsers.
