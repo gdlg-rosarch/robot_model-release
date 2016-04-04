@@ -1,5 +1,5 @@
 <?xml verison="1.0"?>
-<robot name="two_links_one_joint">
+<robot name="no_visual">
   <link name="link1">
     <inertial>
       <mass value="1"/>

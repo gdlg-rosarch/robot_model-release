@@ -2,16 +2,6 @@
 Changelog for package urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.11.10 (2016-02-23)
---------------------
-
-1.11.9 (2016-02-22)
--------------------
-* Add Jackie as a maintainer
-* test_robot.urdf: fix indentation
-* Overhaul tests in urdf
-* Contributors: Jackie Kay, Steven Peters
-
 1.11.8 (2015-09-11)
 -------------------
 * Removed pcre hack for newer released collada-dom.
