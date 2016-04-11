@@ -1,0 +1,13 @@
+Source: ros-kinetic-robot-model
+Section: misc
+Priority: extra
+Maintainer: Ioan Sucan <isucan@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://ros.org/wiki/robot_model
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-robot-model
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, liburdfdom-tools, ros-kinetic-collada-parser, ros-kinetic-collada-urdf, ros-kinetic-joint-state-publisher, ros-kinetic-kdl-parser, ros-kinetic-resource-retriever, ros-kinetic-urdf, ros-kinetic-urdf-parser-plugin
+Description: robot_model contains packages for modeling various aspects of robot information, specified in the Xml Robot Description Format (URDF).
+ The core package of this stack is urdf, which parses URDF files, and constructs an object model (C++) of the robot.
