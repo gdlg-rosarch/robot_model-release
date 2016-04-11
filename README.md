@@ -1,3 +1,34 @@
+## robot_model (kinetic) - 1.12.1-2
+
+The packages in the `robot_model` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release robot_model --track kinetic --rosdistro kinetic` on `Mon, 11 Apr 2016 18:59:42 -0000`
+
+These packages were released:
+- `collada_parser`
+- `collada_urdf`
+- `joint_state_publisher`
+- `kdl_parser`
+- `kdl_parser_py`
+- `robot_model`
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `robot_model`:
+
+- upstream repository: https://github.com/ros/robot_model.git
+- release repository: https://github.com/ros-gbp/robot_model-release.git
+- rosdistro version: `1.12.1-1`
+- old version: `1.12.1-1`
+- new version: `1.12.1-2`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.5`
+- vcstools version: `0.1.38`
+
+
 ## robot_model (kinetic) - 1.12.1-1
 
 The packages in the `robot_model` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release robot_model --track kinetic --rosdistro kinetic` on `Mon, 11 Apr 2016 02:12:26 -0000`
