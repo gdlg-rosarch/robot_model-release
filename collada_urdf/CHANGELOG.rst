@@ -2,6 +2,9 @@
 Changelog for package collada_urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.1 (2016-04-10)
+-------------------
+
 1.11.8 (2015-09-11)
 -------------------
 * Removed pcre hack for newer released collada-dom.
