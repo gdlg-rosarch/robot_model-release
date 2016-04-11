@@ -2,6 +2,11 @@
 Changelog for package kdl_parser_py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.1 (2016-04-10)
+-------------------
+* Remove cmake_modules dependency
+* Contributors: Jackie Kay
+
 1.12.0 (2016-04-04)
 -------------------
 
