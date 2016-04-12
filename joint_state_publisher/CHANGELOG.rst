@@ -2,6 +2,12 @@
 Changelog for package joint_state_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.2 (2016-04-12)
+-------------------
+* Migrate qt (`#128 <https://github.com/ros/robot_model/issues/128>`_)
+  * Migrate JointStatePublisher from wxPython to qt5
+* Contributors: Jackie Kay
+
 1.12.1 (2016-04-10)
 -------------------
 
