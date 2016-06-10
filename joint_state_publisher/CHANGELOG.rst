@@ -2,14 +2,18 @@
 Changelog for package joint_state_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.2 (2016-04-12)
--------------------
-* Migrate qt (`#128 <https://github.com/ros/robot_model/issues/128>`_)
-  * Migrate JointStatePublisher from wxPython to qt5
-* Contributors: Jackie Kay
+1.11.11 (2016-06-10)
+--------------------
+* scroll joint_state_publisher if there are too many joints (`#137 <https://github.com/ros/robot_model//issues/137>`_)
+* Contributors: v4hn
 
-1.12.1 (2016-04-10)
+1.11.10 (2016-02-23)
+--------------------
+
+1.11.9 (2016-02-22)
 -------------------
+* Add Jackie as a maintainer
+* Contributors: Jackie Kay
 
 1.11.8 (2015-09-11)
 -------------------

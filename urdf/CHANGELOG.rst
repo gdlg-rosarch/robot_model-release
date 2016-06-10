@@ -2,11 +2,18 @@
 Changelog for package urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.2 (2016-04-12)
--------------------
+1.11.11 (2016-06-10)
+--------------------
 
-1.12.1 (2016-04-10)
+1.11.10 (2016-02-23)
+--------------------
+
+1.11.9 (2016-02-22)
 -------------------
+* Add Jackie as a maintainer
+* test_robot.urdf: fix indentation
+* Overhaul tests in urdf
+* Contributors: Jackie Kay, Steven Peters
 
 1.11.8 (2015-09-11)
 -------------------

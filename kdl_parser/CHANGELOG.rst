@@ -2,11 +2,23 @@
 Changelog for package kdl_parser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.2 (2016-04-12)
--------------------
+1.11.11 (2016-06-10)
+--------------------
 
-1.12.1 (2016-04-10)
+1.11.10 (2016-02-23)
+--------------------
+
+1.11.9 (2016-02-22)
 -------------------
+* Add Jackie as a maintainer
+* Add COM import test
+* [kdl_parser] remove spurious newline
+* [kdl_parser] Fix bug in importing com if inertia and link frames are different
+* test_robot.urdf: fix indentation
+* Fix values in kdl_parser test
+* Revert debug statements in kdl_parser.cpp
+* Overhaul tests in urdf
+* Contributors: Jackie Kay, Silvio Traversaro, Steven Peters
 
 1.11.8 (2015-09-11)
 -------------------
