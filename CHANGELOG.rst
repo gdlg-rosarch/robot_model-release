@@ -2,6 +2,9 @@
 Changelog for package joint_state_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.4 (2016-08-23)
+-------------------
+
 1.12.3 (2016-06-10)
 -------------------
 * Fix circular logic in joint state publisher events (`#140 <https://github.com/ros/robot_model/issues/140>`_)
