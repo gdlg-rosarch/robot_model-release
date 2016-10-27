@@ -2,6 +2,11 @@
 Changelog for package kdl_parser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.5 (2016-10-27)
+-------------------
+* fix segfault: safely handle empty robot model (`#154 <https://github.com/ros/robot_model/issues/154>`_)
+* Contributors: Robert Haschke
+
 1.12.4 (2016-08-23)
 -------------------
 
