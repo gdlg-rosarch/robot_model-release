@@ -2,27 +2,24 @@
 Changelog for package urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.5 (2016-10-27)
--------------------
-* Added urdf_compatibility.h header to define SharedPtr types (`#160 <https://github.com/ros/robot_model/issues/160>`_)
-  This provides portability for downstream packages allowing them to use urdfdom 0.3 or 0.4.
-* urdf: Explicitly cast shared_ptr to bool in unit test. (`#158 <https://github.com/ros/robot_model/issues/158>`_)
-* Add smart ptr typedefs (`#153 <https://github.com/ros/robot_model/issues/153>`_)
-* Addressed gcc6 build error in urdf which was related to use of the isystem flag (`#157 <https://github.com/ros/robot_model/issues/157>`_)
-* Remove unneeded dependency on libpcrecpp (`#155 <https://github.com/ros/robot_model/issues/155>`_)
-* Contributors: Bence Magyar, Jochen Sprickerhof, Lukas Bulwahn, Maarten de Vries, Robert Haschke
+1.11.12 (2017-01-04)
+--------------------
+* Added ``urdf_compatibility.h`` to define ``SharedPtr`` types, copy of `#160 <https://github.com/ros/robot_model/issues/160>`_ (`#170 <https://github.com/ros/robot_model/issues/170>`_)
+* Addressed gcc6 build error in the urdf package (`#156 <https://github.com/ros/robot_model/issues/156>`_)
+* Contributors: Lukas Bulwahn, Michael Görner
 
-1.12.4 (2016-08-23)
--------------------
+1.11.11 (2016-06-10)
+--------------------
 
-1.12.3 (2016-06-10)
--------------------
+1.11.10 (2016-02-23)
+--------------------
 
-1.12.2 (2016-04-12)
+1.11.9 (2016-02-22)
 -------------------
-
-1.12.1 (2016-04-10)
--------------------
+* Add Jackie as a maintainer
+* test_robot.urdf: fix indentation
+* Overhaul tests in urdf
+* Contributors: Jackie Kay, Steven Peters
 
 1.11.8 (2015-09-11)
 -------------------

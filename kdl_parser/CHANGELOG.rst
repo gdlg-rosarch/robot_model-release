@@ -2,22 +2,26 @@
 Changelog for package kdl_parser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.5 (2016-10-27)
--------------------
-* fix segfault: safely handle empty robot model (`#154 <https://github.com/ros/robot_model/issues/154>`_)
-* Contributors: Robert Haschke
+1.11.12 (2017-01-04)
+--------------------
 
-1.12.4 (2016-08-23)
--------------------
+1.11.11 (2016-06-10)
+--------------------
 
-1.12.3 (2016-06-10)
--------------------
+1.11.10 (2016-02-23)
+--------------------
 
-1.12.2 (2016-04-12)
+1.11.9 (2016-02-22)
 -------------------
-
-1.12.1 (2016-04-10)
--------------------
+* Add Jackie as a maintainer
+* Add COM import test
+* [kdl_parser] remove spurious newline
+* [kdl_parser] Fix bug in importing com if inertia and link frames are different
+* test_robot.urdf: fix indentation
+* Fix values in kdl_parser test
+* Revert debug statements in kdl_parser.cpp
+* Overhaul tests in urdf
+* Contributors: Jackie Kay, Silvio Traversaro, Steven Peters
 
 1.11.8 (2015-09-11)
 -------------------

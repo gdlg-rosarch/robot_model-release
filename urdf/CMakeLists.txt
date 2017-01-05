@@ -10,6 +10,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(TinyXML REQUIRED)
 
+find_package(PkgConfig)
+pkg_check_modules(libpcrecpp libpcrecpp)
+
 if("${urdfdom_headers_VERSION}" VERSION_LESS "1.0")
   # for Wily: maintain compatibility between urdfdom 0.3 and 0.4 (definining SharedPtr types)
   set(URDFDOM_DECLARE_TYPES 1)
@@ -25,21 +28,21 @@ catkin_package(
   LIBRARIES ${PROJECT_NAME}
   INCLUDE_DIRS include ${TinyXML_INLCLUDE_DIRS} ${CATKIN_DEVEL_PREFIX}/include
   CATKIN_DEPENDS rosconsole_bridge roscpp
-  DEPENDS urdfdom_headers urdfdom Boost
+  DEPENDS urdfdom_headers urdfdom Boost pcrecpp
 )
 install(FILES ${generated_compat_header} DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
 
 
 include_directories(
   include
-  ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIR}
+  ${catkin_INCLUDE_DIRS}
   ${urdfdom_INCLUDE_DIRS}
   ${urdfdom_headers_INCLUDE_DIRS}
   ${TinyXML_INCLUDE_DIRS}
   )
 
-link_directories(${catkin_LIBRARY_DIRS} ${Boost_LIBRARY_DIRS})
+link_directories(${Boost_LIBRARY_DIRS} ${catkin_LIBRARY_DIRS})
 
 add_library(${PROJECT_NAME} src/model.cpp src/rosconsole_bridge.cpp)
 target_link_libraries(${PROJECT_NAME} ${TinyXML_LIBRARIES} ${catkin_LIBRARIES} ${urdfdom_LIBRARIES})

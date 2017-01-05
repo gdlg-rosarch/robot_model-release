@@ -42,8 +42,6 @@
 #include <urdf_model/model.h>
 #include <urdf/urdfdom_compatibility.h>
 #include <tinyxml.h>
-#include <boost/shared_ptr.hpp>
-#include <boost/weak_ptr.hpp>
 
 namespace urdf{
 
@@ -61,10 +59,6 @@ public:
   /// \brief Load Model from a XML-string
   bool initString(const std::string& xmlstring);
 };
-
-typedef boost::shared_ptr<Model> ModelSharedPtr;
-typedef boost::shared_ptr<const Model> ModelConstSharedPtr;
-typedef boost::weak_ptr<Model> ModelWeakPtr;
 
 }
 

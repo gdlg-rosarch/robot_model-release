@@ -39,14 +39,7 @@
 
 #include <string>
 #include <boost/shared_ptr.hpp>
-
-#ifndef _WIN32
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include <dae.h>
-#pragma GCC diagnostic pop
-#endif
-
 #include "urdf/model.h"
 
 namespace collada_urdf {
