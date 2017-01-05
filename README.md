@@ -1,3 +1,34 @@
+## robot_model (indigo) - 1.11.12-0
+
+The packages in the `robot_model` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release -r indigo -t indigo robot_model` on `Thu, 05 Jan 2017 01:00:45 -0000`
+
+These packages were released:
+- `collada_parser`
+- `collada_urdf`
+- `joint_state_publisher`
+- `kdl_parser`
+- `kdl_parser_py`
+- `robot_model`
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `robot_model`:
+
+- upstream repository: https://github.com/ros/robot_model.git
+- release repository: https://github.com/ros-gbp/robot_model-release.git
+- rosdistro version: `1.11.11-0`
+- old version: `1.11.11-0`
+- new version: `1.11.12-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.22`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## robot_model (kinetic) - 1.12.5-0
 
 The packages in the `robot_model` repository were released into the `kinetic` distro by running `/usr/local/bin/bloom-release -r kinetic -t kinetic robot_model` on `Thu, 27 Oct 2016 21:00:34 -0000`
