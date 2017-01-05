@@ -10,16 +10,13 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(TinyXML REQUIRED)
 
-find_package(PkgConfig)
-pkg_check_modules(libpcrecpp libpcrecpp)
-
-if("${urdfdom_headers_VERSION}" VERSION_LESS "1.0")
-  # for Wily: maintain compatibility between urdfdom 0.3 and 0.4 (definining SharedPtr types)
-  set(URDFDOM_DECLARE_TYPES 1)
-else()
-  # declare ModelInterface's SharedPtr
-  set(URDFDOM_DECLARE_TYPES 0)
+# Find version components
+if(NOT urdfdom_headers_VERSION)
+set(urdfdom_headers_VERSION "0.0.0")
 endif()
+string(REGEX REPLACE "^([0-9]+).*" "\\1" URDFDOM_HEADERS_MAJOR_VERSION "${urdfdom_headers_VERSION}")
+string(REGEX REPLACE "^[0-9]+\\.([0-9]+).*" "\\1" URDFDOM_HEADERS_MINOR_VERSION "${urdfdom_headers_VERSION}")
+string(REGEX REPLACE "^[0-9]+\\.[0-9]+\\.([0-9]+).*" "\\1" URDFDOM_HEADERS_REVISION_VERSION "${urdfdom_headers_VERSION}")
 set(generated_compat_header "${CATKIN_DEVEL_PREFIX}/include/${PROJECT_NAME}/urdfdom_compatibility.h")
 include_directories("${CATKIN_DEVEL_PREFIX}/include")
 configure_file(urdfdom_compatibility.h.in "${generated_compat_header}" @ONLY)
@@ -28,10 +25,9 @@ catkin_package(
   LIBRARIES ${PROJECT_NAME}
   INCLUDE_DIRS include ${TinyXML_INLCLUDE_DIRS} ${CATKIN_DEVEL_PREFIX}/include
   CATKIN_DEPENDS rosconsole_bridge roscpp
-  DEPENDS urdfdom_headers urdfdom Boost pcrecpp
+  DEPENDS urdfdom_headers urdfdom Boost
 )
 install(FILES ${generated_compat_header} DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
-
 
 include_directories(
   include
