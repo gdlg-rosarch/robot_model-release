@@ -31,10 +31,8 @@
 #include <tf/LinearMath/Transform.h>
 #include <tf/LinearMath/Quaternion.h>
 
-#undef GAZEBO_1_0
 #undef GAZEBO_1_3
 
-//#define GAZEBO_1_0
 #define GAZEBO_1_3
 
 using namespace urdf;
@@ -188,7 +186,7 @@ void assimp_calc_bbox(string fname, float &minx, float &miny, float &minz,
   }
 }
 
-void addChildLinkNamesXML(boost::shared_ptr<const Link> link, ofstream& os)
+void addChildLinkNamesXML(urdf::LinkConstSharedPtr link, ofstream& os)
 {
   os << "  <link name=\"" << link->name << "\">" << endl;
   if ( !!link->visual ) {
@@ -385,17 +383,6 @@ void addChildLinkNamesXML(boost::shared_ptr<const Link> link, ofstream& os)
   }
   os << "  </link>" << endl;
 
-#ifdef GAZEBO_1_0
-  if ( add_gazebo_description ) {
-    os << "  <gazebo reference=\"" << link->name << "\">" << endl;
-    os << "    <material>Gazebo/Grey</material>" << endl;
-    //os << "    <mu1>0.9</mu1>" << endl;
-    //os << "    <mu2>0.9</mu2>" << endl;
-    os << "    <turnGravityOff>false</turnGravityOff>" << endl;
-    os << "  </gazebo>" << endl;
-  }
-#endif
-
 #ifdef GAZEBO_1_3
   if ( add_gazebo_description ) {
     os << "  <gazebo reference=\"" << link->name << "\">" << endl;
@@ -405,14 +392,14 @@ void addChildLinkNamesXML(boost::shared_ptr<const Link> link, ofstream& os)
   }
 #endif
 
-  for (std::vector<boost::shared_ptr<Link> >::const_iterator child = link->child_links.begin(); child != link->child_links.end(); child++)
+  for (std::vector<urdf::LinkSharedPtr >::const_iterator child = link->child_links.begin(); child != link->child_links.end(); child++)
     addChildLinkNamesXML(*child, os);
 }
 
-void addChildJointNamesXML(boost::shared_ptr<const Link> link, ofstream& os)
+void addChildJointNamesXML(urdf::LinkConstSharedPtr link, ofstream& os)
 {
   double r, p, y;
-  for (std::vector<boost::shared_ptr<Link> >::const_iterator child = link->child_links.begin(); child != link->child_links.end(); child++){
+  for (std::vector<urdf::LinkSharedPtr >::const_iterator child = link->child_links.begin(); child != link->child_links.end(); child++){
     (*child)->parent_joint->parent_to_joint_origin_transform.rotation.getRPY(r,p,y);
     std::string jtype;
     if ( (*child)->parent_joint->type == urdf::Joint::UNKNOWN ) {
@@ -443,7 +430,7 @@ void addChildJointNamesXML(boost::shared_ptr<const Link> link, ofstream& os)
     os << "    <axis   xyz=\"" <<  (*child)->parent_joint->axis.x << " ";
     os << (*child)->parent_joint->axis.y << " " << (*child)->parent_joint->axis.z << "\"/>" << endl;
     {
-      boost::shared_ptr<urdf::Joint> jt((*child)->parent_joint);
+      urdf::JointSharedPtr jt((*child)->parent_joint);
 
       if ( !!jt->limits ) {
         os << "    <limit ";
@@ -501,42 +488,17 @@ void addChildJointNamesXML(boost::shared_ptr<const Link> link, ofstream& os)
   }
 }
 
-void printTreeXML(boost::shared_ptr<const Link> link, string name, string file)
+void printTreeXML(urdf::LinkConstSharedPtr link, string name, string file)
 {
   std::ofstream os;
   os.open(file.c_str());
   os << "<?xml version=\"1.0\"?>" << endl;
   os << "<robot name=\"" << name << "\"" << endl;
-  os << "       xmlns:xi=\"http://www.w3.org/2001/XInclude\"" << endl;
-  os << "       xmlns:gazebo=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#gz\"" << endl;
-  os << "       xmlns:model=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#model\"" << endl;
-  os << "       xmlns:sensor=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor\"" << endl;
-  os << "       xmlns:body=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#body\"" << endl;
-  os << "       xmlns:geom=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#geom\"" << endl;
-  os << "       xmlns:joint=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#joint\"" << endl;
-  os << "       xmlns:interface=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#interface\"" << endl;
-  os << "       xmlns:rendering=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#rendering\"" << endl;
-  os << "       xmlns:renderable=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#renderable\"" << endl;
-  os << "       xmlns:controller=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#controller\"" << endl;
-  os << "       xmlns:physics=\"http://playerstage.sourceforge.net/gazebo/xmlschema/#physics\">" << endl;
+  os << "       xmlns:xi=\"http://www.w3.org/2001/XInclude\">" << endl;
 
   addChildLinkNamesXML(link, os);
 
   addChildJointNamesXML(link, os);
-
-  if ( add_gazebo_description ) {
-#ifdef GAZEBO_1_0
-    // old gazebo (gazebo on ROS Fuerte)
-    os << " <gazebo>" << endl;
-    os << "   <controller:gazebo_ros_controller_manager" << endl;
-    os << "      name=\"gazebo_ros_controller_manager\"" << endl;
-    os << "      plugin=\"libgazebo_ros_controller_manager.so\">" << endl;
-    os << "     <alwaysOn>true</alwaysOn>" << endl;
-    os << "     <updateRate>1000.0</updateRate>" << endl;
-    os << "   </controller:gazebo_ros_controller_manager>" << endl;
-    os << "  </gazebo>" << endl;
-#endif
-  }
 
   os << "</robot>" << endl;
   os.close();
@@ -667,7 +629,7 @@ int main(int argc, char** argv)
   }
   xml_file.close();
 
-  boost::shared_ptr<ModelInterface> robot;
+  urdf::ModelInterfaceSharedPtr robot;
   if( xml_string.find("<COLLADA") != std::string::npos )
   {
     ROS_DEBUG("Parsing robot collada xml string");
