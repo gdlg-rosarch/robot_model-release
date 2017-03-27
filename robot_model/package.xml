@@ -1,6 +1,6 @@
 <package>
   <name>robot_model</name>
-  <version>1.12.7</version>
+  <version>1.12.8</version>
   <description>
     <tt>robot_model</tt> contains packages for modeling various
     aspects of robot information, specified in the Xml Robot
@@ -10,8 +10,9 @@
   </description>
 
   <author email="isucan@gmail.com">Ioan Sucan</author>
-  <maintainer email="isucan@gmail.com">Ioan Sucan</maintainer>
-  <maintainer email="jacquelinekay1@gmail.com">Jackie Kay</maintainer>
+  <author email="jacquelinekay1@gmail.com">Jackie Kay</author>
+  <maintainer email="clalancette@osrfoundation.org">Chris Lalancette</maintainer>
+  <maintainer email="sloretz@osrfoundation.org">Shane Loretz</maintainer>
 
   <license>BSD</license>
 
