@@ -2,6 +2,11 @@
 Changelog for package kdl_parser_py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.13 (2017-03-27)
+--------------------
+* Switch a couple more packages over to Chris and Shane.
+* Contributors: Chris Lalancette
+
 1.11.12 (2017-01-04)
 --------------------
 
