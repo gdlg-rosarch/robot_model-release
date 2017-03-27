@@ -2,30 +2,30 @@
 Changelog for package collada_urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.7 (2017-01-26)
--------------------
+1.11.13 (2017-03-27)
+--------------------
+* Use urdf::*ShredPtr instead of boost::shared_ptr (`#144 <https://github.com/ros/robot_model/issues/144>`_)
+* Remove old gazebo settings.
+  Based on an initial patch from YoheiKakiuchi, just totally
+  remove old Gazebo 1.0 settings, as they are never used and
+  almost certainly will never be used.
+* add Chris and Shane as maintainers (`#185 <https://github.com/ros/robot_model/issues/185>`_)
+* remove divide by 2 when writing boxes to collada format (`#133 <https://github.com/ros/robot_model/issues/133>`_)
+* Contributors: Chris Lalancette, Jackie Kay, Jochen Sprickerhof, William Woodall
 
-1.12.6 (2017-01-04)
--------------------
-* Now using ``urdf::*ShredPtr`` instead of ``boost::shared_ptr`` (`#144 <https://github.com/ros/robot_model/issues/144>`_)
-* Contributors: Jochen Sprickerhof
+1.11.12 (2017-01-04)
+--------------------
 
-1.12.5 (2016-10-27)
--------------------
+1.11.11 (2016-06-10)
+--------------------
 
-1.12.4 (2016-08-23)
--------------------
-* Use the C++11 standard (`#145 <https://github.com/ros/robot_model/issues/145>`_)
-* Contributors: William Woodall
+1.11.10 (2016-02-23)
+--------------------
 
-1.12.3 (2016-06-10)
+1.11.9 (2016-02-22)
 -------------------
-
-1.12.2 (2016-04-12)
--------------------
-
-1.12.1 (2016-04-10)
--------------------
+* Add Jackie as a maintainer
+* Contributors: Jackie Kay
 
 1.11.8 (2015-09-11)
 -------------------

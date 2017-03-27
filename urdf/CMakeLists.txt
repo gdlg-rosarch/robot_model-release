@@ -10,6 +10,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(TinyXML REQUIRED)
 
+find_package(PkgConfig)
+pkg_check_modules(libpcrecpp libpcrecpp)
+
 # Find version components
 if(NOT urdfdom_headers_VERSION)
 set(urdfdom_headers_VERSION "0.0.0")
@@ -25,9 +28,10 @@ catkin_package(
   LIBRARIES ${PROJECT_NAME}
   INCLUDE_DIRS include ${TinyXML_INLCLUDE_DIRS} ${CATKIN_DEVEL_PREFIX}/include
   CATKIN_DEPENDS rosconsole_bridge roscpp
-  DEPENDS urdfdom_headers urdfdom Boost
+  DEPENDS urdfdom_headers urdfdom Boost pcrecpp
 )
 install(FILES ${generated_compat_header} DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
+
 
 include_directories(
   include
