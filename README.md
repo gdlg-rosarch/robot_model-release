@@ -1,3 +1,32 @@
+## robot_model (lunar) - 1.12.8-1
+
+The packages in the `robot_model` repository were released into the `lunar` distro by running `/usr/bin/bloom-release robot_model --track lunar --rosdistro lunar --new-track` on `Tue, 11 Apr 2017 03:49:02 -0000`
+
+These packages were released:
+- `collada_parser`
+- `collada_urdf`
+- `joint_state_publisher`
+- `kdl_parser`
+- `kdl_parser_py`
+- `robot_model`
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `robot_model`:
+- upstream repository: https://github.com/ros/robot_model.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `1.12.8-0`
+- new version: `1.12.8-1`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.4`
+- vcstools version: `0.1.38`
+
+
 ## robot_model (lunar) - 1.12.8-0
 
 The packages in the `robot_model` repository were released into the `lunar` distro by running `/usr/bin/bloom-release robot_model --track lunar --rosdistro lunar --new-track` on `Tue, 11 Apr 2017 03:44:01 -0000`
