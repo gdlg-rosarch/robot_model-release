@@ -1,6 +1,6 @@
 <package>
   <name>robot_model</name>
-  <version>1.12.8</version>
+  <version>1.12.9</version>
   <description>
     <tt>robot_model</tt> contains packages for modeling various
     aspects of robot information, specified in the Xml Robot
@@ -32,6 +32,12 @@
   <run_depend>joint_state_publisher</run_depend>
 
   <export>
+    <deprecated>
+      This metapackage will be removed in ROS M. Replace all dependencies on
+      "robot_model" in your package.xml with dependencies on collada_parser,
+      collada_urdf, joint_state_publisher, kdl_parser, resource-retriever, urdf,
+      urdf_parser_plugin, and liburdfdom-tools instead.
+    </deprecated>
     <metapackage/>
   </export>
 
