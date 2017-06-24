@@ -2,6 +2,14 @@
 Changelog for package urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.10 (2017-06-24)
+--------------------
+* Change urdf::Model to use std::shared_ptrs in urdfdom > v0.4 (`#206 <https://github.com/ros/robot_model/issues/206>`_)
+* Contributors: Dave Coleman
+
+1.12.9 (2017-04-26)
+-------------------
+
 1.12.8 (2017-03-27)
 -------------------
 * Allow supplying NodeHandle for initParam (`#168 <https://github.com/ros/robot_model/issues/168>`_)
