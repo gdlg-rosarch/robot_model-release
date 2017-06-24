@@ -1,3 +1,28 @@
+## robot_model (kinetic) - 1.12.10-0
+
+The packages in the `robot_model` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release robot_model --track kinetic --rosdistro kinetic` on `Sat, 24 Jun 2017 23:27:29 -0000`
+
+These packages were released:
+- `joint_state_publisher`
+- `robot_model`
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `robot_model`:
+- upstream repository: https://github.com/ros/robot_model.git
+- release repository: https://github.com/ros-gbp/robot_model-release.git
+- rosdistro version: `1.12.8-0`
+- old version: `1.12.8-0`
+- new version: `1.12.10-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.4`
+- vcstools version: `0.1.38`
+
+
 ## robot_model (lunar) - 1.12.9-0
 
 The packages in the `robot_model` repository were released into the `lunar` distro by running `/usr/bin/bloom-release robot_model --track lunar --rosdistro lunar` on `Wed, 26 Apr 2017 15:08:33 -0000`
