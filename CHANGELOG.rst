@@ -2,6 +2,9 @@
 Changelog for package joint_state_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.14 (2017-08-14)
+--------------------
+
 1.11.13 (2017-03-27)
 --------------------
 * [joint_state_publisher] Handle time moving backwards
