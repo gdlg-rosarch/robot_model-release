@@ -1,3 +1,30 @@
+## robot_model (indigo) - 1.11.14-0
+
+The packages in the `robot_model` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --ros-distro indigo robot_model` on `Mon, 14 Aug 2017 16:25:56 -0000`
+
+These packages were released:
+- `joint_state_publisher`
+- `robot_model`
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `robot_model`:
+
+- upstream repository: https://github.com/ros/robot_model.git
+- release repository: https://github.com/ros-gbp/robot_model-release.git
+- rosdistro version: `1.11.13-0`
+- old version: `1.11.13-0`
+- new version: `1.11.14-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## robot_model (lunar) - 1.12.11-0
 
 The packages in the `robot_model` repository were released into the `lunar` distro by running `/usr/bin/bloom-release robot_model --track lunar --rosdistro lunar` on `Tue, 27 Jun 2017 20:36:50 -0000`
