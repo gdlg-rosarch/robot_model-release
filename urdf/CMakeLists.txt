@@ -10,6 +10,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(TinyXML REQUIRED)
 
+find_package(PkgConfig)
+pkg_check_modules(libpcrecpp libpcrecpp)
+
 # Find version components
 if(NOT urdfdom_headers_VERSION)
 set(urdfdom_headers_VERSION "0.0.0")
@@ -21,15 +24,14 @@ set(generated_compat_header "${CATKIN_DEVEL_PREFIX}/include/${PROJECT_NAME}/urdf
 include_directories("${CATKIN_DEVEL_PREFIX}/include")
 configure_file(urdfdom_compatibility.h.in "${generated_compat_header}" @ONLY)
 
-add_compile_options(-std=c++11)
-
 catkin_package(
   LIBRARIES ${PROJECT_NAME}
-  INCLUDE_DIRS include ${TinyXML_INLCLUDE_DIRS} ${CATKIN_DEVEL_PREFIX}/include
+  INCLUDE_DIRS include ${CATKIN_DEVEL_PREFIX}/include
   CATKIN_DEPENDS rosconsole_bridge roscpp
-  DEPENDS urdfdom_headers urdfdom Boost
+  DEPENDS urdfdom_headers urdfdom Boost pcrecpp TinyXML
 )
 install(FILES ${generated_compat_header} DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
+
 
 include_directories(
   include
@@ -53,8 +55,6 @@ if(CATKIN_ENABLE_TESTING)
   find_package(catkin REQUIRED COMPONENTS rostest)
   add_rostest_gtest(test_urdf_parser test/test_robot_model_parser.launch test/test_robot_model_parser.cpp)
   target_link_libraries(test_urdf_parser ${PROJECT_NAME})
-
-  catkin_add_gtest(urdfdom_compatibility_test test/urdfdom_compatibility.cpp)
 endif()
 
 # no idea how CATKIN does this

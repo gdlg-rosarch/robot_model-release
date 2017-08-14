@@ -1,6 +1,6 @@
-<package format="2">
+<package>
   <name>joint_state_publisher</name>
-  <version>1.12.11</version>
+  <version>1.11.14</version>
   <description>
     This package contains a tool for setting and publishing joint state values for a given URDF.
   </description>
@@ -14,9 +14,12 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <exec_depend>rospy</exec_depend>
-  <exec_depend>python_qt_binding</exec_depend>
-  <exec_depend>sensor_msgs</exec_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>wxpython</build_depend>
+  <build_depend>sensor_msgs</build_depend>
 
-  <test_depend>rostest</test_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>wxpython</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+
 </package>
