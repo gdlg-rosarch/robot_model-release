@@ -2,6 +2,9 @@
 Changelog for package robot_model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.14 (2017-08-14)
+--------------------
+
 1.11.13 (2017-03-27)
 --------------------
 * add Chris and Shane as maintainers (`#185 <https://github.com/ros/robot_model/issues/185>`_)
